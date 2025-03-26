@@ -5,8 +5,11 @@
     box-sizing: border-box;
 }
 
-body {
+html,body {
     font-family: 'Azeret Mono', monospace;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    height: auto;
 }
 
 nav{
@@ -41,7 +44,7 @@ nav{
 }
 
 /* root styles */
-a{
+.contact_btn a{
     text-decoration: none;
     color: white;
 }
@@ -242,4 +245,225 @@ iframe{
     width: 900px;
     height: 510px;
     border-radius: 16px;
+}
+/* my target */
+.current_target{
+    height: 460px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.current_title{
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 24px;
+}
+
+.current_description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.7;
+    margin-bottom: 48px;
+}
+
+.current_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.current_box{
+    width: 360px;
+    height: 300px;
+    padding: 45px 20px;
+    background: #FF4C1E0D ;
+    text-align: left;
+    border-radius: 16px;
+}
+
+.target_title{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+    margin-top: 8px;
+}
+
+.current_container .target_description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.7;
+    width: 281px;
+    margin-bottom: 20px;
+}
+
+.current_target a{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;
+    /* text-decoration-line: underline; */
+}
+
+.current_box:nth-child(2){
+    background-color: #004CE80D;
+}
+.current_box:nth-child(3){
+    background-color: #FFDF000D;
+}
+/* next target */
+.next_target{
+    margin-top: 111px;
+    height: 866px;
+}
+
+.next_content{
+    width: 852px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.next_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+}
+.next_box{
+    width: 100%;
+    height: 219px;
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.next_right{
+    width: 100%;
+}
+
+.next_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next_description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.7;
+    margin-bottom: 24px;
+}
+
+.next_box a{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;   
+}
+
+/* support section styles */
+
+.support{
+    margin-top: 50px;
+    height: 313px;
+    border-radius: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../assets/handshake.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 64px 48px;
+}
+
+.support_content{
+    color: #fff;
+    width: 730px;
+    margin: 0 auto;
+}
+
+.support_title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.support_description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.7;
+    margin: 16px 0 24px 0;
+}
+
+#support_contact{
+    width: 684px;
+    height: 57px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    border: none;
+    border-radius: 8px;
+}
+
+input[type="text"]{
+    width: 548px;
+    height: 50px;
+    padding: 19px 20px 19px 20px;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    box-sizing: border-box;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+}
+input[type="submit"]{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(255, 255, 255);
+}
+
+/* footer styles */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(13, 19, 33, 0.03);
+    padding: 32px 150px;
+}
+
+.footer_content{
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer_icon img{
+    margin-top: 5px;
+    width: 30px;
 }
